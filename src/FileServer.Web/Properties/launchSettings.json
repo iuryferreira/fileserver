@@ -1,6 +1,6 @@
 ﻿{
   "profiles": {
-    "FileServer.Web": {
+    "Development": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "hotReloadEnabled": true,
@@ -8,7 +8,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "commandLineArgs": "--path files"
+      "commandLineArgs": "--path ../../files"
     }
   }
 }
