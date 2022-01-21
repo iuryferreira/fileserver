@@ -1,4 +1,5 @@
 using FileServer.Web;
+using FileServer.Web.Sorters;
 using Microsoft.Extensions.FileProviders;
 
 OptionsLoader.LoadOptions(args);
@@ -11,7 +12,8 @@ var app = builder.Build();
 app.UseFileServer(new FileServerOptions
 {
     FileProvider = new PhysicalFileProvider(OptionsLoader.Options.Path),
-    EnableDirectoryBrowsing = true
+    EnableDirectoryBrowsing = true,
+    DirectoryBrowserOptions = {  Formatter = new SortByNameDirectoryFormatter() }
 });
 
 app.Run();
