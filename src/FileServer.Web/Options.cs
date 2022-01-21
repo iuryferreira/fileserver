@@ -10,7 +10,7 @@ public class Options
     public bool Loaded { get; private set; }
 
     public void Ok() => Loaded = true;
-    public void Error() => Loaded = true;
+    public void Error() => Loaded = false;
 }
 
 public static class OptionsLoader
