@@ -6,6 +6,8 @@ OptionsLoader.LoadOptions(args);
 if (!OptionsLoader.Options.Loaded) return;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls("https://*:5001;http://*:5000");
+
 builder.Services.AddDirectoryBrowser();
 var app = builder.Build();
 
