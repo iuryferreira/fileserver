@@ -7,8 +7,6 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <AssemblyName>fileserver</AssemblyName>
-        <RootNamespace>fileserver</RootNamespace>
         <ApplicationIcon>favicon.ico</ApplicationIcon>
         <Company>Iury Ferreira</Company>
         <AssemblyVersion>0.0.1</AssemblyVersion>
@@ -19,6 +17,8 @@
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugType>embedded</DebugType>
+        <AssemblyName>fileserver</AssemblyName>
+        <RootNamespace>fileserver</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
